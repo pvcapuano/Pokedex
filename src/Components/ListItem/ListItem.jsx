@@ -1,17 +1,19 @@
 import React from "react";
+import { Card, Id, Infos, Image, Target } from "./styles";
 
 const ListItem = ({id, name, image, type}) => {
     return (
-        <div>
-            <div>
-                <small>#0{id}</small>
-            </div>
-            <img src={image} alt={name} />
+        <Card>
+            <Target>
+                <Id>#0{id}</Id>
+                <Image src={image} alt={name} />
+            </Target>    
+            
             <div>
                 <h3>{name}</h3>
-                <small>Type: {type}</small>
+                <Infos>Type: {type}</Infos>
             </div>
-        </div>
+        </Card>
     )
 }
 

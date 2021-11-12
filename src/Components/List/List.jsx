@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ListItem from '../ListItem/ListItem'
+import { Lista, ListDetail } from './styles'
 
 
 export default function List() {
@@ -31,9 +32,9 @@ export default function List() {
 
     return (
        
-        <div>
+        <Lista>
             <h1>Lista</h1>
-            <div>
+            <ListDetail>
             {allPokemons
             .sort((a,b) => a.id > b.id ? 1 : -1)
             .map((pokemon, index) => 
@@ -44,8 +45,8 @@ export default function List() {
             type={pokemon.types[0].type.name}
             key={index} />
                 )}
-            </div>
+            </ListDetail>
             <button onClick={() => getAllPokemons()}>Carregar mais</button>
-        </div>
+        </Lista>
     )
 }
