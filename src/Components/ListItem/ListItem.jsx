@@ -1,17 +1,22 @@
-import React from "react";
-import { Card, Id, Infos, Image, Target } from "./styles";
+import React, { useState } from "react";
+import { Card, Infos, Image, Target } from "./styles";
 
-const ListItem = ({id, name, image, type}) => {
+const ListItem = ({id, name, image, type, pokeball}) => {
+    console.log(type)
+
+    
+    
+
     return (
-        <Card>
+        <Card background={type} pokeball={pokeball.includes(name)}>
             <Target>
-                <Id>#0{id}</Id>
                 <Image src={image} alt={name} />
             </Target>    
             
             <div>
-                <h3>{name}</h3>
-                <Infos>Type: {type}</Infos>
+                <Infos>#0{id}</Infos>
+                <Infos>{name}</Infos>
+                <Infos>{type}</Infos>
             </div>
         </Card>
     )

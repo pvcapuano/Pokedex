@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Lista = styled.div`
+background-color: #FFCB05;
    
 `
 

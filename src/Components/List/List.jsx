@@ -3,7 +3,7 @@ import ListItem from '../ListItem/ListItem'
 import { Lista, ListDetail } from './styles'
 
 
-export default function List() {
+const List = ({pokeball}) => {
 
     const [allPokemons, setAllPokemons] = useState([])
     const [loadMore, setLoadMore] = useState("https://pokeapi.co/api/v2/pokemon?limit=20")
@@ -28,12 +28,12 @@ export default function List() {
 
     useEffect(()=> {
         getAllPokemons()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
        
-        <Lista>
-            <h1>Lista</h1>
+        <Lista >
             <ListDetail>
             {allPokemons
             .sort((a,b) => a.id > b.id ? 1 : -1)
@@ -43,10 +43,14 @@ export default function List() {
             name={pokemon.name}
             image={pokemon.sprites.other.dream_world.front_default}
             type={pokemon.types[0].type.name}
-            key={index} />
+            key={index}
+            pokeball={pokeball}
+             />
                 )}
             </ListDetail>
             <button onClick={() => getAllPokemons()}>Carregar mais</button>
         </Lista>
     )
 }
+
+export default List
