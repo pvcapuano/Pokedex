@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ListItem from '../ListItem/ListItem'
-import { Lista, ListDetail } from './styles'
+import { Btn, Lista, ListDetail } from './styles'
 
 
 const List = ({pokeball}) => {
@@ -48,7 +48,7 @@ const List = ({pokeball}) => {
              />
                 )}
             </ListDetail>
-            <button onClick={() => getAllPokemons()}>Carregar mais</button>
+            <Btn onClick={() => getAllPokemons()}>Carregar mais</Btn>
         </Lista>
     )
 }
