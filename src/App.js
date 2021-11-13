@@ -7,7 +7,9 @@ import "./App.css"
 function App() {
 
   // My Pokemons
+  // eslint-disable-next-line
   const [ pokeball, setPokeball ] = useState(["pikachu", "gengar", "articuno", "mewtwo", "umbreon", "suicune"])
+  
 
   return (
 
