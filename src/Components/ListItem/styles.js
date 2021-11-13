@@ -22,6 +22,8 @@ export const Target = styled.div`
     align-items: center;
     justify-content: center;
 `
+export const CardDetail = styled.div`
+`
 
 export const Image = styled.img`
     padding: 30px;

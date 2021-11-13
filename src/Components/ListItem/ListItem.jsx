@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Card, Infos, Image, Target } from "./styles";
+import React from "react";
+import { Card, Infos, Image, Target, CardDetail } from "./styles";
 
 const ListItem = ({id, name, image, type, pokeball}) => {
     console.log(type)
@@ -13,11 +13,11 @@ const ListItem = ({id, name, image, type, pokeball}) => {
                 <Image src={image} alt={name} />
             </Target>    
             
-            <div>
+            <CardDetail>
                 <Infos>#0{id}</Infos>
                 <Infos>{name}</Infos>
                 <Infos>{type}</Infos>
-            </div>
+            </CardDetail>
         </Card>
     )
 }
