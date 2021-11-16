@@ -6,7 +6,7 @@ import { Btn, Lista, ListDetail } from './styles'
 const List = ({pokeball}) => {
 
     const [allPokemons, setAllPokemons] = useState([])
-    const [loadMore, setLoadMore] = useState("https://pokeapi.co/api/v2/pokemon?limit=20")
+    const [loadMore, setLoadMore] = useState("https://pokeapi.co/api/v2/pokemon?limit=50")
 
     const getAllPokemons = async () => {
         const res = await fetch(loadMore)
