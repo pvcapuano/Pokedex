@@ -9,10 +9,10 @@
 * React Hooks
 * Fetch API
 
-### Objetivo:
+## Objetivo:
 Estudar mais sobre o consumo de APIs, reforçar Async/Await e aprender a passar props no Styled Component. 
 
-### Resumo:
+## Resumo:
 
 O projeto foi separado em 3 componentes: Um Header, List e o ListItem. 
 A API foi consumida via fetch. Depois os dados foram passados para o ListItem através do map().
