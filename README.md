@@ -4,13 +4,13 @@
 
 ![Captura de Tela 2021-11-16 às 20 57 31](https://user-images.githubusercontent.com/10540844/142084911-efd8e1c1-a798-404e-b207-8bb348e04b94.png)
 
-## Projeto em produção
+
+## Projeto em produção:
 
 <p>
-
- <a href="pokedex-two-iota.vercel.app" target="_blank">Demo no Vercel
-   
-  </a>
+ <a href="pokedex-two-iota.vercel.app" target="_blank"> 
+  <img src="https://ml.globenewswire.com/Resource/Download/3a54c241-a668-4c94-9747-3d3da9da3bf2?size=2" alt="Vercel" width="100"/> 
+ </a>
 </p>
 
 ## Tecnologias:
