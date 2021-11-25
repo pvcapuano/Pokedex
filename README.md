@@ -1,9 +1,21 @@
+## Resumo: 
+
+Pokedex com as informações dos Pokemons. Aplicação web desenvolvida em ReactJs. Foi utilizada a <a href="https://pokeapi.co/">PokeAPI</a> para obter as informações necessárias. 
+
+## Rodando o projeto:
+
+* git clone https://github.com/pvcapuano/Pokedex.git
+* cd pokedex
+* npm i (instala todas as dependências)
+* npm start (inicia o projeto)
+
 ## Projeto
 
 ![Captura de Tela 2021-11-16 às 20 37 55](https://user-images.githubusercontent.com/10540844/142083515-d03e731b-5764-4341-923f-5244c7d3ed62.png)
+<sub>Visão geral do projeto</sub>
 
 ![Captura de Tela 2021-11-16 às 20 57 31](https://user-images.githubusercontent.com/10540844/142084911-efd8e1c1-a798-404e-b207-8bb348e04b94.png)
-
+<sub>Pokebola</sub>
 
 ## Projeto em produção:
 
@@ -14,15 +26,17 @@
 </p>
 
 ## Tecnologias:
+
 * ReactJs
 * Styled Components
 * React Hooks
 * Fetch API
 
 ## Objetivo:
+
 Estudar mais sobre o consumo de APIs, reforçar Async/Await e aprender a passar props no Styled Component. 
 
-## Resumo:
+## Atividades realizadas:
 
 * O projeto foi separado em 3 componentes: Um Header, List e o ListItem. 
 * A API foi consumida via fetch. Depois os dados foram passados para o ListItem através do map(). 
