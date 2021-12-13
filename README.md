@@ -5,7 +5,6 @@ Pokedex com as informações dos Pokemons. Aplicação web desenvolvida em React
 ## Rodando o projeto:
 
 * git clone https://github.com/pvcapuano/Pokedex.git
-* cd pokedex
 * npm i (instala todas as dependências)
 * npm start (inicia o projeto)
 
